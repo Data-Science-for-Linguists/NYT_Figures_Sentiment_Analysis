@@ -1,2 +1,5 @@
 # ignore all .idea files
 .idea/*
+
+# ignore corpus files
+data/*
