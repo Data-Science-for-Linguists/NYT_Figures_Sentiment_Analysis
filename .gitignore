@@ -3,3 +3,6 @@
 
 # ignore corpus files
 data/*
+
+# ignore ipynb checkpoint files
+src/.ipynb_checkpoints
