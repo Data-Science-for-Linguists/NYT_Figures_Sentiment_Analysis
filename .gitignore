@@ -6,3 +6,6 @@ data/*
 
 # ignore ipynb checkpoint files
 src/.ipynb_checkpoints
+
+# ignore pickle files
+src/*.p
