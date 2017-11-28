@@ -10,3 +10,14 @@
 - I also scaled up the program to 1 month's worth of data to be able to start exploring looking at people over time. This is within my data_processing.ipynb file.
 
 - I also pulled the code from data_processing into a new ipynb and modified it in order to take a year's worth of data and to pickle the resulting dataframe so that I dont have to do it every single time I run my program.
+
+# Progress Report 3
+- Now I am digging deeper and refining what exactly it is I want to do as far as analysis goes. I wrote a utility script to extract my data of interest from the NYT corpus for the year of 2007. I am using this as a start before I unpack the entire corpus in the interest of time and space.
+
+- This also involved additional manipulation of my dataframes in order to make it more useful for what I want to do, as well as make it faster. In this process of refining the analysis process, it is also giving me a chance to figure out ~how~ exactly these structures should be saved in order to save time in file reading.
+
+- The plan for the final submission is to have unpacked the entire corpus and scale the code and structures up to accommodate all of the data.
+
+- ISSUE: One issue that I ran into was that my utility script, which worked to unpack the year 2007, no longer works on other years in the corpus due to xpathing in the xml files. I have to figure out what is going on with this in order to complete the code.
+
+- I separated my code into two folders: jupyter_notebooks and src. This is for organization purposes to separate my utility scripts from the code I wish to present.
