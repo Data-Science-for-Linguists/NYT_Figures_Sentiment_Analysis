@@ -4,14 +4,17 @@ from pprint import pprint
 
 # This performs a simple analysis on a small subset of the data
 
+# Load in pickled "unpacked" file that was created from unpack_year_of_data.py
 pd2007 = pickle.load(open("../jupyter_notebooks/nyt-2007.p", "rb"))
-pd2007.head()
 
+# Group everything by Name and DOCID and save it to a new dataframe
 pd2007_sorted = pd2007.groupby(['Name', 'DOCID']).count()
 
+# Example - Use the first person to be mentioned in multiple articles
 pd2007_sorted.xs("AARON, HANK").index.values.tolist()
 
-names_2007 = list(pd2007["Name"])
+# Grab a list of all the names in the file
+names_2007 = list(set(pd2007["Name"]))
 
 names_and_occurences = {}
 for name in names_2007:
@@ -26,4 +29,4 @@ for name in names_and_occurences:
     neu = []
     pos = []
     for doc in names_and_occurences.get(name):
-        pd2007[]
+        
