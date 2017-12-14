@@ -8,4 +8,4 @@ data/*
 src/.ipynb_checkpoints
 
 # ignore pickle files
-src/*.p
+*.p
