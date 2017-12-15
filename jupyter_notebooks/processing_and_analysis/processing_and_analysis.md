@@ -43,9 +43,9 @@ At least one of these files are necessary to run, but the processing will provid
     - [Create the Naive-Bayes Classifier and Train It](#Create-the-Naive-Bayes-Classifier-and-Train-It)
     - [Measure Accuracy of Naive-Bayes Classifier](#Measure-Accuracy-of- Naive-Bayes-Classifier)
     - [Get the Most Informative Features From the Classifier](#Get-the- Most-Informative-Features-From-the-Classifier)
-    
+
 ---    
-    
+
 - [Is There a Pattern Between Month and Sentiment?](#Is-There-a-Pattern- Between-Month-and-Sentiment?)
     - [Group opinions by Months](#Group-opinions-by-Months)
     - [Visualize Sentiment Averages over Months](#Visualize-Sentiment- Averages-over-Months)
@@ -100,7 +100,7 @@ names
 
 
 
-### Get Data from `nyt-*.p` Files For Each Person 
+### Get Data from `nyt-*.p` Files For Each Person
 
 
 ```python
@@ -912,7 +912,7 @@ plt.show()
 
 
 
-![png](output_23_3.png)
+![png](img/output_23_3.png)
 
 
 # What Topics are Associated with Positive Articles? Negative?
@@ -1167,7 +1167,7 @@ for row in pos_docs.itertuples(index=True, name='Pandas'):
                 pos_topics[t] += 1
             else:
                 pos_topics[t] = 1
-                
+
 pos_topics_df = pd.DataFrame(list(pos_topics.items()), columns = ['Topic', 'Count'])
 pos_topics_df = pos_topics_df.sort_values(by='Count', ascending=False).reset_index()
 pos_topics_df["Sent"] = "POS"
@@ -1362,7 +1362,7 @@ for row in neg_docs.itertuples(index=True, name='Pandas'):
                 neg_topics[t] += 1
             else:
                 neg_topics[t] = 1
-                
+
 neg_topics_df = pd.DataFrame(list(neg_topics.items()), columns = ['Topic', 'Count'])
 neg_topics_df = neg_topics_df.sort_values(by='Count', ascending=False).reset_index()
 neg_topics_df["Sent"] = "NEG"
@@ -1820,7 +1820,7 @@ plt.show()
 
 
 
-![png](output_35_5.png)
+![png](img/output_35_5.png)
 
 
 ### Plot Counts of Negative Occurences of Top 20 Topics
@@ -1873,7 +1873,7 @@ plt.show()
 
 
 
-![png](output_37_5.png)
+![png](img/output_37_5.png)
 
 
 ### Merge the Resulting `pos` and `neg` DataFrames into a Single `topics` DataFrame to Create Side-by-Side Bar Chart
@@ -2129,7 +2129,7 @@ plt.show()
 
 
 
-![png](output_41_3.png)
+![png](img/output_41_3.png)
 
 
 # What Are Common Feature Words in Negative Articles? What Are Common Words in Positive Articles?
@@ -2139,7 +2139,7 @@ http://www.nltk.org/book/ch06.html
 
 
 ```python
-labeled_articles = ([(row['Text'], 'neg') for ix, row in neg_docs.iterrows()] + 
+labeled_articles = ([(row['Text'], 'neg') for ix, row in neg_docs.iterrows()] +
                    [(row['Text'], 'pos') for ix, row in pos_docs.iterrows()])
 ```
 
@@ -2247,7 +2247,7 @@ nb_classifier.show_most_informative_features(50)
                  deep-seated = True              neg : pos    =     16.7 : 1.0
 
 
-# Is There a Pattern Between Month and Sentiment? 
+# Is There a Pattern Between Month and Sentiment?
 
 
 ```python
@@ -2599,7 +2599,7 @@ plt.show()
 
 
 
-![png](output_63_4.png)
+![png](img/output_63_4.png)
 
 
 ### Peek at the Articles from April 4 and May 5
@@ -3059,5 +3059,3 @@ may.tail()
   </tbody>
 </table>
 </div>
-
-
