@@ -26,6 +26,7 @@ is organized into a file tree by year, month, then date.
 - [.gitignore](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/.gitignore): Contains information to ignore from local reposiry
 - [LICENSE](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/LICENSE.md): License information for this repository
 - [License Notes](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/LICENSE_notes.md): Contains license information for the NYT Annotated Corpus data set
+- [Project Presentation](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/Project_Presentation.pdf): A pdf version of the PowerPoint presentation for this project
 - [Progress Report](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/progress_report.md): Contains notes about progress throughout the development of the project
 - [Project Plan](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/project_plan.md): Contains notes about the original plan of the project
 
