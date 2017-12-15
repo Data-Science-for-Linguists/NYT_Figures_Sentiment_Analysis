@@ -1,4 +1,3 @@
-<!-- Progress Report Information Goes Here -->
 # Progress Report 1
 - I started to small-scale process the xml files in my data. Because the corpus is already well annotated XML files, it was more of a matter of reading in the data that I need and storing the relevant information in a DataFrame so that I can work with only the information I need. The DataFrame is still a WIP and more information will be appended to it. I could also create multiple DataFrames with separate information. They would be linked by their index?
 
@@ -21,3 +20,7 @@
 - ISSUE: One issue that I ran into was that my utility script, which worked to unpack the year 2007, no longer works on other years in the corpus due to xpathing in the xml files. I have to figure out what is going on with this in order to complete the code.
 
 - I separated my code into two folders: jupyter_notebooks and src. This is for organization purposes to separate my utility scripts from the code I wish to present.
+
+# Final Progress Report
+- Having presented what I have so far, I am able to take the knowledge gained from that to be able to write the code for more pointed research questions.
+- I ultimately decided to focus on the years from 2000-2007 for times sake. Having to unzip and process all of the years of the corpus would have increased the time to process and analyze, however doing so would be very interesting to see in the code.
