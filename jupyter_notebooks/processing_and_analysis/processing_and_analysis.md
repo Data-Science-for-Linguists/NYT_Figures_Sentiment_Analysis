@@ -48,7 +48,7 @@ At least one of these files are necessary to run, but the processing will provid
 
 - [Is There a Pattern Between Month and Sentiment?](#Is-There-a-Pattern-Between-Month-and-Sentiment?)
     - [Group opinions by Months](#Group-opinions-by-Months)
-    - [Visualize Sentiment Averages over Months](#Visualize-Sentiment- Averages-over-Months)
+    - [Visualize Sentiment Averages over Months](#Visualize-Sentiment-Averages-over-Months)
     - [Peek at the Articles from April (4) and May (5)](#Peek-at-the-Articles-from-April-4-and-May-5)
 
 ### Turn On Ability To See Multiple Outputs
