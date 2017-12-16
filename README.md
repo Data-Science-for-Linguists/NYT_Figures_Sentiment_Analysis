@@ -31,6 +31,8 @@ is organized into a file tree by year, month, then date.
 - [Progress Report](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/progress_report.md): Contains notes about progress throughout the development of the project
 - [Project Plan](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/project_plan.md): Contains notes about the original plan of the project
 
-
 ### Visitor's Log
 Visitor's Log for this project can be found [here](https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_chris.md).
+
+### Old Code
+The .ipynb files in this folder contains practice and abandoned ideas for this project. Ideas that were continued were implemented in the .ipynb files in the folder `jupyter_notebook`. The `src` folder contains an old idea to run Python scripts to unpack data. This was abandoned with a new way of unpacking data from the XML files was implemented.
