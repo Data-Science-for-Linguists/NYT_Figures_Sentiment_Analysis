@@ -12,7 +12,7 @@ At least one of these files are necessary to run, but the processing will provid
 - [Get Data from nyt-*.p Files For Each Person](#Get-Data-from-nyt-*.p-Files-For-Each-Person)
 - [Get Opinion/Editoral Articles](#Get-Opinion/Editoral-Articles)
 - [Remove Unusable Rows From opinion](#Remove-Unusable-Rows-From-opinion)
-- [Apply a Function to Calculate Sentiment of Each Document Using VADER](#Apply-a-Function-to-Calculate-Sentiment-of-Each-Document-Using-VADER)
+- [Apply a Function to Calculate Sentiment of Each Document Using VADER](#Apply-a-Function-to-Calculate-Sentiment-of- Each-Document-Using-VADER)
 - [Use GroupBy to Aggregate Count Statistics](#Use-GroupBy-to-Aggregate-Count-Statistics)  
 
 ---
@@ -23,8 +23,8 @@ At least one of these files are necessary to run, but the processing will provid
 
 ---
 
-- [What Topics are Associated with Positive articles? Negative?](#What-Topics-are-Associated-with-Positive-Articles?-Negative?)
-    - [Split the opinions DataFrame into POS and NEG DataFrames](#Split-the-opinions-DataFrame-into-POS-and-NEG-DataFrames)
+- [What Topics are Associated with Positive articles? Negative?](#What-Topics-are-Associated-with-Positive-Articles?- Negative?)
+    - [Split the opinions DataFrame into POS and NEG DataFrames](#Split-the-opinions-DataFrame-into-POS-and-NEG- DataFrames)
     - [Gather Topics and Counts from pos_topics & Convert to DataFrame](#Gather-Topics-and-Counts-from-pos_topics-&-Convert-to-DataFrame)
     - [Gather Topics and Counts from neg_topics & Convert to DataFrame](#Gather-Topics-and-Counts-from-neg_topics-&-Convert-to-DataFrame)
     - [Aggregate Positive and Negative Topic Counts Together](#Aggregate-Positive-and-Negative-Topic-Counts-Together)
@@ -35,20 +35,20 @@ At least one of these files are necessary to run, but the processing will provid
 
 ---
 
-- [What Are Common Feature Words in Negative Articles? What Are Common Words in Positive Articles?](#What-Are-Common-Feature-Words-in-Negative-Articles?-What-Are-Common-Words-in-Positive-Articles?)
-    - [Collect and Tag Articles From pos_docs and neg_docs that Were Created Above](#Collect-and-Tag-Articles-From-pos_docs-and-neg_docs-that-Were-Created-Above)
-    - [Create a Function to Extract Word Features](#Create-a-Function-to-Extract-Word-Features)
-    - [Create a Feature Set for Sentiments](#Create-a-Feature-Set-for-Sentiments)
+- [What Are Common Feature Words in Negative Articles? What Are Common Words in Positive Articles?](#What-Are-Common- Feature-Words-in-Negative-Articles?-What-Are-Common-Words-in-Positive-Articles?)
+    - [Collect and Tag Articles From pos_docs and neg_docs that Were Created Above](#Collect-and-Tag-Articles-From- pos_docs-and-neg_docs-that-Were-Created-Above)
+    - [Create a Function to Extract Word Features](#Create-a-Function-to- Extract-Word-Features)
+    - [Create a Feature Set for Sentiments](#Create-a-Feature-Set-for- Sentiments)
     - [Split feature_sets into a Training and Test Set](#Split-feature_sets-into-a-Training-and-Test-Set)
     - [Create the Naive-Bayes Classifier and Train It](#Create-the-Naive-Bayes-Classifier-and-Train-It)
-    - [Measure Accuracy of Naive-Bayes Classifier](#Measure-Accuracy-of-Naive-Bayes-Classifier)
-    - [Get the Most Informative Features From the Classifier](#Get-the-Most-Informative-Features-From-the-Classifier)
-
+    - [Measure Accuracy of Naive-Bayes Classifier](#Measure-Accuracy-of- Naive-Bayes-Classifier)
+    - [Get the Most Informative Features From the Classifier](#Get-the- Most-Informative-Features-From-the-Classifier)
+    
 ---    
-
-- [Is There a Pattern Between Month and Sentiment?](#Is-There-a-Pattern-Between-Month-and-Sentiment?)
+    
+- [Is There a Pattern Between Month and Sentiment?](#Is-There-a-Pattern- Between-Month-and-Sentiment?)
     - [Group opinions by Months](#Group-opinions-by-Months)
-    - [Visualize Sentiment Averages over Months](#Visualize-Sentiment-Averages-over-Months)
+    - [Visualize Sentiment Averages over Months](#Visualize-Sentiment- Averages-over-Months)
     - [Peek at the Articles from April (4) and May (5)](#Peek-at-the-Articles-from-April-4-and-May-5)
 
 ### Turn On Ability To See Multiple Outputs
@@ -100,7 +100,7 @@ names
 
 
 
-### Get Data from `nyt-*.p` Files For Each Person
+### Get Data from `nyt-*.p` Files For Each Person 
 
 
 ```python
@@ -912,7 +912,7 @@ plt.show()
 
 
 
-![png](img/output_23_3.png)
+![png](output_23_3.png)
 
 
 # What Topics are Associated with Positive Articles? Negative?
@@ -1167,7 +1167,7 @@ for row in pos_docs.itertuples(index=True, name='Pandas'):
                 pos_topics[t] += 1
             else:
                 pos_topics[t] = 1
-
+                
 pos_topics_df = pd.DataFrame(list(pos_topics.items()), columns = ['Topic', 'Count'])
 pos_topics_df = pos_topics_df.sort_values(by='Count', ascending=False).reset_index()
 pos_topics_df["Sent"] = "POS"
@@ -1362,7 +1362,7 @@ for row in neg_docs.itertuples(index=True, name='Pandas'):
                 neg_topics[t] += 1
             else:
                 neg_topics[t] = 1
-
+                
 neg_topics_df = pd.DataFrame(list(neg_topics.items()), columns = ['Topic', 'Count'])
 neg_topics_df = neg_topics_df.sort_values(by='Count', ascending=False).reset_index()
 neg_topics_df["Sent"] = "NEG"
@@ -1820,7 +1820,7 @@ plt.show()
 
 
 
-![png](img/output_35_5.png)
+![png](output_35_5.png)
 
 
 ### Plot Counts of Negative Occurences of Top 20 Topics
@@ -1873,7 +1873,7 @@ plt.show()
 
 
 
-![png](img/output_37_5.png)
+![png](output_37_5.png)
 
 
 ### Merge the Resulting `pos` and `neg` DataFrames into a Single `topics` DataFrame to Create Side-by-Side Bar Chart
@@ -2129,17 +2129,16 @@ plt.show()
 
 
 
-![png](img/output_41_3.png)
+![png](output_41_3.png)
 
 
 # What Are Common Feature Words in Negative Articles? What Are Common Words in Positive Articles?
-http://www.nltk.org/book/ch06.html
 
 ### Collect and Tag Articles From `pos_docs` and `neg_docs` that Were Created Above
 
 
 ```python
-labeled_articles = ([(row['Text'], 'neg') for ix, row in neg_docs.iterrows()] +
+labeled_articles = ([(row['Text'], 'neg') for ix, row in neg_docs.iterrows()] + 
                    [(row['Text'], 'pos') for ix, row in pos_docs.iterrows()])
 ```
 
@@ -2247,7 +2246,7 @@ nb_classifier.show_most_informative_features(50)
                  deep-seated = True              neg : pos    =     16.7 : 1.0
 
 
-# Is There a Pattern Between Month and Sentiment?
+# Is There a Pattern Between Month and Sentiment? 
 
 
 ```python
@@ -2599,7 +2598,7 @@ plt.show()
 
 
 
-![png](img/output_63_4.png)
+![png](output_63_4.png)
 
 
 ### Peek at the Articles from April 4 and May 5
@@ -3059,3 +3058,5 @@ may.tail()
   </tbody>
 </table>
 </div>
+
+
