@@ -76,7 +76,15 @@ and the most informative positive words are:
 - lovely
 - enjoying
 
-__4. Are there particular months that harbor a particular sentiment?__
+__4. Are there particular months that harbor a particular sentiment?__  
+The final question I wish to explore is similar to (1), however I wanted to see if there was a tendency for particular months to have a certain sentiment. By performing [`groupby()`](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/jupyter_notebooks/processing_and_analysis/processing_and_analysis.md#group-opinions-by-months) operation on months, I am able to gather the count data and mean sentiment scores for each month.
 
+The results from the data are visualized below.
+![png](jupyter_notebooks/processing_and_analysis/img/output_63_4.png)
+
+From the graph, we can see that April and May averages a negative-neutral average score. March is near zero, but slightly positive. The remaining months seem to have a higher average than the others.
+
+After [peeking](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/jupyter_notebooks/processing_and_analysis/processing_and_analysis.md#peek-at-the-articles-from-april-4-and-may-5) some of the April and May articles, I was able to see some of the topics such as United States International Relations, Terrorism, Economics, amongst others. These have proven to skew more negatively as seen in prior analyses.
 
 ## Future Exploration
+Some of the future tasks I would like to see this project taken is to define a particular set of topics, and use VADER on social media posts like Twitter. Because VADER was designed and trained for social media posts, it could present more accurate information. Additionally, with the right code, analyses code be modified live as more tweets on a particular topic are posted.
