@@ -64,10 +64,19 @@ Doing this showed me that the most discussed topics are related to politics and 
 One interesting observation is the topic "United States International Relations", which has ~50,000 more negative mentions than positive ones. Perhaps this says something about the state of the United States at this time?
 
 __3. What words are associated with positive articles? What words are associated with negative words?__  
-Following the [steps](http://www.nltk.org/book/ch06.html) to generate a Naive-Bayes classifier using nltk, I was able to discover what the most informative feature words are from this data in identifying a positive or negative article.
+Following these [steps](http://www.nltk.org/book/ch06.html) to generate a Naive-Bayes classifier using nltk, I was able to discover what the [most informative feature words](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/jupyter_notebooks/processing_and_analysis/processing_and_analysis.md#get-the-most-informative-features-from-the-classifier) are from this data in identifying a positive or negative article.
 
+With an [accuracy score](https://github.com/Data-Science-for-Linguists/NYT_Figures_Sentiment_Analysis/blob/master/jupyter_notebooks/processing_and_analysis/processing_and_analysis.md#measure-accuracy-of-naive-bayes-classifier) of 0.90, the most informative feature word for negative articles are:
+- killing
+- prisoner
+- crime  
 
+and the most informative positive words are:
+- recommend
+- lovely
+- enjoying
 
 __4. Are there particular months that harbor a particular sentiment?__
+
 
 ## Future Exploration
