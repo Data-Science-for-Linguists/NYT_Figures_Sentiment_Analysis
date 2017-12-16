@@ -12,7 +12,7 @@ At least one of these files are necessary to run, but the processing will provid
 - [Get Data from nyt-*.p Files For Each Person](#Get-Data-from-nyt-*.p-Files-For-Each-Person)
 - [Get Opinion/Editoral Articles](#Get-Opinion/Editoral-Articles)
 - [Remove Unusable Rows From opinion](#Remove-Unusable-Rows-From-opinion)
-- [Apply a Function to Calculate Sentiment of Each Document Using VADER](#Apply-a-Function-to-Calculate-Sentiment-of- Each-Document-Using-VADER)
+- [Apply a Function to Calculate Sentiment of Each Document Using VADER](#Apply-a-Function-to-Calculate-Sentiment-of-Each-Document-Using-VADER)
 - [Use GroupBy to Aggregate Count Statistics](#Use-GroupBy-to-Aggregate-Count-Statistics)  
 
 ---
@@ -23,8 +23,8 @@ At least one of these files are necessary to run, but the processing will provid
 
 ---
 
-- [What Topics are Associated with Positive articles? Negative?](#What-Topics-are-Associated-with-Positive-Articles?- Negative?)
-    - [Split the opinions DataFrame into POS and NEG DataFrames](#Split-the-opinions-DataFrame-into-POS-and-NEG- DataFrames)
+- [What Topics are Associated with Positive articles? Negative?](#What-Topics-are-Associated-with-Positive-Articles-Negative?)
+    - [Split the opinions DataFrame into POS and NEG DataFrames](#Split-the-opinions-DataFrame-into-POS-and-NEG-DataFrames)
     - [Gather Topics and Counts from pos_topics & Convert to DataFrame](#Gather-Topics-and-Counts-from-pos_topics-&-Convert-to-DataFrame)
     - [Gather Topics and Counts from neg_topics & Convert to DataFrame](#Gather-Topics-and-Counts-from-neg_topics-&-Convert-to-DataFrame)
     - [Aggregate Positive and Negative Topic Counts Together](#Aggregate-Positive-and-Negative-Topic-Counts-Together)
@@ -35,18 +35,18 @@ At least one of these files are necessary to run, but the processing will provid
 
 ---
 
-- [What Are Common Feature Words in Negative Articles? What Are Common Words in Positive Articles?](#What-Are-Common- Feature-Words-in-Negative-Articles?-What-Are-Common-Words-in-Positive-Articles?)
-    - [Collect and Tag Articles From pos_docs and neg_docs that Were Created Above](#Collect-and-Tag-Articles-From- pos_docs-and-neg_docs-that-Were-Created-Above)
-    - [Create a Function to Extract Word Features](#Create-a-Function-to- Extract-Word-Features)
-    - [Create a Feature Set for Sentiments](#Create-a-Feature-Set-for- Sentiments)
+- [What Are Common Feature Words in Negative Articles? What Are Common Words in Positive Articles?](#What-Are-Common-Feature-Words-in-Negative-Articles?-What-Are-Common-Words-in-Positive-Articles?)
+    - [Collect and Tag Articles From pos_docs and neg_docs that Were Created Above](#Collect-and-Tag-Articles-From-pos_docs-and-neg_docs-that-Were-Created-Above)
+    - [Create a Function to Extract Word Features](#Create-a-Function-to-Extract-Word-Features)
+    - [Create a Feature Set for Sentiments](#Create-a-Feature-Set-for-Sentiments)
     - [Split feature_sets into a Training and Test Set](#Split-feature_sets-into-a-Training-and-Test-Set)
     - [Create the Naive-Bayes Classifier and Train It](#Create-the-Naive-Bayes-Classifier-and-Train-It)
-    - [Measure Accuracy of Naive-Bayes Classifier](#Measure-Accuracy-of- Naive-Bayes-Classifier)
-    - [Get the Most Informative Features From the Classifier](#Get-the- Most-Informative-Features-From-the-Classifier)
+    - [Measure Accuracy of Naive-Bayes Classifier](#Measure-Accuracy-of-Naive-Bayes-Classifier)
+    - [Get the Most Informative Features From the Classifier](#Get-the-Most-Informative-Features-From-the-Classifier)
 
 ---    
 
-- [Is There a Pattern Between Month and Sentiment?](#Is-There-a-Pattern- Between-Month-and-Sentiment?)
+- [Is There a Pattern Between Month and Sentiment?](#Is-There-a-Pattern-Between-Month-and-Sentiment?)
     - [Group opinions by Months](#Group-opinions-by-Months)
     - [Visualize Sentiment Averages over Months](#Visualize-Sentiment- Averages-over-Months)
     - [Peek at the Articles from April (4) and May (5)](#Peek-at-the-Articles-from-April-4-and-May-5)
